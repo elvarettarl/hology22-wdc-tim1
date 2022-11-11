@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Project Akhir Hology</title>
+    <link rel="stylesheet" href="/assets/style.css">
+    <link rel="icon" href="/assets/logo/logo.svg">
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>
+<script>
+  const menuClick = document.querySelector("sidebar-menu__item");
+
+
+//DISPLAY USER INPUT TO HTML PAGE
+let userInput = document.getElementById("userInput");
+let tweetButton = document.getElementById('tweetButton');
+let tweet = document.getElementById('tweet');
+
+
+function tweetFunction(){
+    tweet.innerHTML =  userInput.value;
+    //RETURN USER PROFILE WIP
+    // tweet.appendChild(document.createElement('img')).src = '/assets/icons/userpp.png';
+    // tweet.removeChild(userInput.value);
+    
+}
+
+tweetButton.addEventListener('click',tweetFunction);
+
+//TEXTAREA
+const textarea = document.getElementById("userInput");
+textarea.style.cssText = `height: ${textarea.scrollHeight}px; overflow-y:hidden`
+textarea.addEventListener("input", function() {
+    this.style.height = "auto";
+    this.style.height = `${this.scrollHeight}px`;
+})
+
+
+//PREVENT ENTER 
+userInput.addEventListener('keypress', event => {
+    event.preventDefault;
+    if(event.key === 'Enter'){
+        console.log('ENTER KENA KNTL');
+        event.preventDefault;
+        document.getElementById('tweetButton').click();
+    }  
+    
+})
+
+menuClick.addEvent
+
+</script>

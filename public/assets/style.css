@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+html{
+  font-family: "Roboto",sans-serif;
+}
+
+.logo{
+  height: 40px;
+  filter:
+    invert(45%) sepia(68%)
+    saturate(1721%) hue-rotate(180deg)
+    brightness(100%) contrast(89%);
+
+  margin: 5px 0px;
+}
+
+.layout{
+  display: grid;
+  grid-template-columns: 250px auto 350px;
+
+}
+
+.layout__left-sidebar{
+  border-right: 1px solid #e7e7e7;
+  padding-left: auto;
+  padding-right: 1px;
+  flex: 0.2;
+}
+
+
+.sidebar-menu__item{
+  font-weight: 500;
+  font-size: 19px;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
+
+.sidebar-menu__item:hover{
+  border-radius: 30px;
+  color:#00ACEE ;
+  transition: color 100ms ease-out;
+}
+
+.sidebar-menu{
+  position: fixed;
+}
+
+
+.sidebar-menu__item-icon{
+  height: 26px;
+  margin-right: 20px;
+}
+
+.sidebar-menu__item-icon:hover{
+  color:#00ACEE ;
+}
+
+.layout__right-sidebar{
+  border-left: 1px solid #e7e7e7;
+  padding: 10px;
+  position: fixed;
+  overflow-y: scroll, hidden;
+}
+
+.layout__main {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  padding: 10px;
+  flex: 0.5;
+  border-right: 1px solid white;
+  min-width: fit-content;
+  overflow-y: scroll;
+}
+
+.layout__main::-webkit-scrollbar {
+  display: none;
+}
+
+.main_header {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 100;
+  border: 1px solid white;
+  padding: 15px 20px;
+}
+
+.main_header h2{
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.tweetBox_input img{
+  border-radius: 50%;
+  height: 40px;
+}
+
+.tweetBox_input {
+  display: flex;
+  padding: 20px;
+}
+
+.tweetBox_input textarea{
+  font-family: "Roboto",sans-serif;
+  display: block;
+  flex: 1;
+  margin-left: 20px;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  resize: none;
+  
+}
+
+textarea::-webkit-scrollbar{ 
+  width: 0px;
+  -ms-overflow-style: none;
+}
+
+
+
+.tweetBox  {
+  padding-bottom: 10px;
+  border-bottom: 8px solid white;
+  padding-right: 10px;
+}
+
+.tweetBox form{
+  display: flex;
+  flex-direction: column;
+}
+
+.tweet_main{
+  padding-left: 30px ;
+}
+
+.tweetBox .tweetButton {
+  background-color: #00ACEE;
+  border: none;
+  color: white;
+  font-weight: 900 ;
+  border-radius: 30px;
+  width: 80px;
+  height: 40px;
+  margin-top: 20px;
+  margin-left: auto;
+}
+
+.tweet_main p{
+  display: flex;
+  font-size:20px;
+  padding-right: 10px;
+}
+
+.search_right_sidebar{
+  height: 26px;
+  width: 26px;
+  margin-right: 20px;
+}
+
+.sidebar_input{
+  display: flex;
+  background-color: rgb(197, 190, 190);
+  align-items: center;
+  padding: 10px;
+  border-top: 10px;
+  border-radius: 20px;
+}
+
+.sidebar_input input{
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: rgb(197, 190, 190);
+  outline: none;
+}
+
